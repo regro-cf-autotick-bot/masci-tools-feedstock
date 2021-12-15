@@ -39,6 +39,7 @@ requirements:
     - click-completion
     - tabulate
     - pyyaml
+    - typing-extensions
 
 test:
   imports:
