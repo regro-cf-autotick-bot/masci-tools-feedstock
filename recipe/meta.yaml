@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.7
   run:
     - ase
     - deepdiff
@@ -27,14 +27,18 @@ requirements:
     - humanfriendly
     - lxml >=4.5
     - matplotlib-base
-    - mendeleev <0.8.0
+    - mendeleev
     - more-itertools
     - numpy
     - pandas
-    - python >=3.6
+    - python >=3.7
     - scipy
     - seaborn
     - bump2version
+    - click
+    - click-completion
+    - tabulate
+    - pyyaml
 
 test:
   imports:
