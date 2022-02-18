@@ -1,5 +1,5 @@
 {% set name = "masci-tools" %}
-{% set version = "0.7.2" %}
+{% set version = "0.8.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/masci_tools-{{ version }}.tar.gz
-  sha256: 67099a7c15fd2884af49de110d1b6e6308e2703978d70dd8c597158b1622561a
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/masci-tools-{{ version }}.tar.gz
+  sha256: 8595e156ce27c516f229a54287d0a70b4ac255611ffb4245afbaa2702f9e6576
 
 build:
   number: 0
@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python >=3.7
+    - flit-core >=3.4,<4
   run:
     - ase
     - deepdiff
@@ -40,6 +41,7 @@ requirements:
     - tabulate
     - pyyaml
     - typing-extensions
+    - ordered-set ==4.0.2 #from deepdiff
 
 test:
   imports:
