@@ -26,7 +26,7 @@ requirements:
     - future
     - h5py
     - humanfriendly
-    - lxml >=4.5
+    - lxml >=4.8
     - matplotlib-base
     - mendeleev
     - more-itertools
