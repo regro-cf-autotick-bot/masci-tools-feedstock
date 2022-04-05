@@ -1,5 +1,5 @@
 {% set name = "masci-tools" %}
-{% set version = "0.9.0" %}
+{% set version = "0.9.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/masci-tools-{{ version }}.tar.gz
-  sha256: 38e0fea8ab2dc2609d3a720f60db3b0de8ce2a264b31459781b74f10c3ac39a2
+  sha256: e6ef3e6ea580a54dde4f57d47d3aa30e426a69ff63af61991c46606e54c86346
 
 build:
   number: 0
