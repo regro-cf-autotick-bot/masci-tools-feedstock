@@ -41,7 +41,7 @@ requirements:
     - tabulate
     - pyyaml
     - typing-extensions
-    - ordered-set ==4.0.2 #from deepdiff
+    - ordered-set <4.2 #from deepdiff
 
 test:
   imports:
