@@ -1,5 +1,5 @@
 {% set name = "masci-tools" %}
-{% set version = "0.10.1" %}
+{% set version = "0.11.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/masci-tools-{{ version }}.tar.gz
-  sha256: b7954ad4544044dca0092c46f223f1dd0da9d07ce0d49cb452843e7cdb47a894
+  sha256: 432fb646fcc6f26d171196b140377b177a5c32ed1bb1c02b50fd097cda1de5b5
 
 build:
   number: 0
@@ -21,27 +21,25 @@ requirements:
     - python >=3.7
     - flit-core >=3.4,<4
   run:
+    - python >=3.7
     - ase
     - deepdiff
-    - future
     - h5py
     - humanfriendly
     - lxml >=4.8
     - matplotlib-base
+    - bokeh
     - mendeleev
     - more-itertools
     - numpy
     - pandas
-    - python >=3.7
     - scipy
     - seaborn
-    - bump2version
     - click
     - click-completion
     - tabulate
     - pyyaml
     - typing-extensions
-    - ordered-set <4.2 #from deepdiff
 
 test:
   imports:
