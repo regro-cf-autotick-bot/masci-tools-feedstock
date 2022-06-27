@@ -21,27 +21,25 @@ requirements:
     - python >=3.7
     - flit-core >=3.4,<4
   run:
+    - python >=3.7
     - ase
     - deepdiff
-    - future
     - h5py
     - humanfriendly
     - lxml >=4.8
     - matplotlib-base
+    - bokeh
     - mendeleev
     - more-itertools
     - numpy
     - pandas
-    - python >=3.7
     - scipy
     - seaborn
-    - bump2version
     - click
     - click-completion
     - tabulate
     - pyyaml
     - typing-extensions
-    - ordered-set <4.2 #from deepdiff
 
 test:
   imports:
