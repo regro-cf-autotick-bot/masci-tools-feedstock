@@ -40,6 +40,7 @@ requirements:
     - tabulate
     - pyyaml
     - typing-extensions
+    - spglib
 
 test:
   imports:
