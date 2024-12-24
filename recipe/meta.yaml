@@ -7,21 +7,21 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/masci-tools-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/masci-tools-{{ version }}.tar.gz
   sha256: 457cc913ea8b731adafd0e8fa5499afb27e9a2e7a900caf7c19b88abb024704e
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python {{ python_min }}
     - flit-core >=3.4,<4
   run:
-    - python >=3.7
+    - python >={{ python_min }}
     - ase
     - deepdiff
     - h5py
@@ -50,6 +50,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 
 about:
